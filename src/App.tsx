@@ -1,13 +1,29 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
+import {useEffect, useState} from "react";
 
 function App() {
 
+  const [time, setTime] = useState(new Date())
+
+  useEffect(() => {
+    const interval = setInterval(()=> {
+      setTime(new Date());
+    }, 1000)
+
+    return () => clearInterval(interval)
+  }, []);
+
+  const hours = time.getHours()
+  const minutes = time.getMinutes()
+  const seconds = time.getSeconds()
 
   return (
-      <div>xx xx xx</div>
+      <div>
+
+        <h2>{hours} : {minutes} : {seconds}</h2>
+
+      </div>
   )
 }
 
