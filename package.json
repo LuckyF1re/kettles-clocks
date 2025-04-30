@@ -28,5 +28,10 @@
     "typescript": "~5.7.2",
     "typescript-eslint": "^8.26.1",
     "vite": "^6.3.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LuckyF1re/kettles-clocks.git"
+  },
+  "homepage": "https://github.com/github.com/LuckyF1re/kettles-clocks#readme"
 }

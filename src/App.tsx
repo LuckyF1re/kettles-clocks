@@ -18,10 +18,12 @@ function App() {
   const minutes = time.getMinutes()
   const seconds = time.getSeconds()
 
+  const clocks = `${hours} : ${minutes} : ${seconds}`
+
   return (
       <div>
 
-        <h2>{hours} : {minutes} : {seconds}</h2>
+        <h2 className={'clock-text-color'}>{clocks}</h2>
 
       </div>
   )
