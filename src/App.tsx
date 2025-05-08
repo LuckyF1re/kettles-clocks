@@ -18,7 +18,9 @@ function App() {
   const minutes = time.getMinutes()
   const seconds = time.getSeconds()
 
-  const clocks = `${hours} : ${minutes} : ${seconds}`
+
+
+  const clocks = `${hours > 9 ? hours : "0" + hours } : ${minutes} : ${seconds > 9 ? seconds :  "0" + seconds}`
 
   return (
       <div>
